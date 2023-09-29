@@ -1,0 +1,28 @@
+use("Esteban_Store")
+
+db.products.drop()
+
+db.products.insertMany([
+  {
+    name: "Hammer",
+    price: 9.99,
+  },
+  {
+    name: "Screwdriver",
+    price: 19.99,
+  },
+  {
+    name: "Drill",
+    price: 79.99,
+  },
+  {
+    name: "Saw",
+    price: 39.99,
+  },
+  {
+    name: "Axe",
+    price: 49.99,
+  }
+])
+
+db.products.find()
