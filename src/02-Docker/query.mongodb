@@ -1,0 +1,3 @@
+use("Esteban_Store")
+
+db.products.find()
