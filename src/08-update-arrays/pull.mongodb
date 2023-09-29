@@ -1,0 +1,15 @@
+use("Esteban_Store")
+
+// db.inventory.updateMany({},{
+//   $pull:{
+//     tags: "headphone"
+//   }
+// })
+
+db.inventory.updateMany({},{
+  $pull:{
+    tags: {
+      $in: ["appliance","school"]
+    }
+  }
+})
