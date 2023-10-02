@@ -1,4 +1,4 @@
-use("Esteban_Store")
+use("Esteban_Store");
 
 // db.iot.insertOne({
 //   sensor: "A001",
@@ -7,7 +7,7 @@ use("Esteban_Store")
 // })
 
 // db.iot.updateOne(
-//   { sensor: "A001", 
+//   { sensor: "A001",
 //     date: "2022-01-03" ,
 //   },
 //   {
@@ -15,11 +15,8 @@ use("Esteban_Store")
 //   }
 // )
 db.iot.updateOne(
-  { sensor: "A001", 
-    date: "2022-01-03" ,
-  },
+  { sensor: "A001", date: "2022-01-03" },
   {
-      $pop:{readings: 1}
+    $pop: { readings: 1 },
   }
-)
-
+);

@@ -1,2 +1,2 @@
-use("Esteban_Store")
-db.iot.find()
+use("Esteban_Store");
+db.iot.find();

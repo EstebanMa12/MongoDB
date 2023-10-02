@@ -1,4 +1,4 @@
-use("Esteban_Store")
+use("Esteban_Store");
 
 // db.inventory.updateMany({},{
 //   $pull:{
@@ -6,10 +6,13 @@ use("Esteban_Store")
 //   }
 // })
 
-db.inventory.updateMany({},{
-  $pull:{
-    tags: {
-      $in: ["appliance","school"]
-    }
+db.inventory.updateMany(
+  {},
+  {
+    $pull: {
+      tags: {
+        $in: ["appliance", "school"],
+      },
+    },
   }
-})
+);

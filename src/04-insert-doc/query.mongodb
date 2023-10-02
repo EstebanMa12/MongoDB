@@ -1,3 +1,3 @@
-use("Esteban_Store")
+use("Esteban_Store");
 
-db.products.find()
+db.products.find();

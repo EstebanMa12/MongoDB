@@ -1,9 +1,10 @@
-use("Esteban_Store")
+use("Esteban_Store");
 
-db.inventory.updateOne({_id:4},
+db.inventory.updateOne(
+  { _id: 4 },
   {
-    $push:{
-      tags: "headphone"
-    }
+    $push: {
+      tags: "headphone",
+    },
   }
-)
+);
